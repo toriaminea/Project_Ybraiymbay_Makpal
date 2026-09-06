@@ -1,0 +1,8 @@
+﻿No.,Mechanism,Test purpose,Expected result,Actual result,Status
+1,Learner answer validation,Verify normalization and recognition of equivalent Python expressions.,Correct variants are recognized despite insignificant formatting differences.,Expected behavior reproduced.,Passed
+2,Support escalation,Verify an increase in support after consecutive incorrect answers.,The support level increases after repeated incorrect answers.,Support levels increase according to the established rules.,Passed
+3,Scaffold fading,Verify a reduction in support after successful actions.,The support level decreases after correct answers.,Step-by-step fading observed.,Passed
+4,Generative module control,Verify that the predetermined support level is passed to the generative module.,The model receives the assigned level and does not select it independently.,The level is passed to the generative module correctly.,Passed
+5,AI error handling,Verify handling of a rate-limit response without showing a task fallback.,A service-availability message is shown instead of a preset task hint.,The rate-limit response is handled as specified.,Passed
+6,Adaptive scenario policy,Verify the reproduction of S1–S6 sequences.,Actual support levels match expectations in every scenario.,All planned scenarios reproduced correctly.,Passed
+7,Displayed hint tracking,Verify that analytics count both generated and fallback hints.,The number of received hints matches the number displayed to the learner.,Generated and fallback hints are counted together.,Passed

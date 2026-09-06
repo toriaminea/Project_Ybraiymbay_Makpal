@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Identifying Even Numbers",
+    "goal": "Complete the condition so that the program counts the even numbers in the list.",
+    "code": "numbers = [2, 5, 8, 11, 14]\ncount = 0\n\nfor n in numbers:\n    if ______:\n        count += 1\n\nprint(count)",
+    "answer_kind": "expression",
+    "accepted_answers": ["n % 2 == 0"],
+    "support_cap": 4,
+    "support_messages": {
+      "1": "What property of a number shows whether it can be divided by 2 with no remainder?",
+      "2": "In Python, the % operator returns the remainder after division. Think about the remainder when an even number is divided by 2.",
+      "3": "An even number leaves a remainder of zero when divided by 2. Try building a condition with n % 2.",
+      "4": "The condition is n % 2 == 0. It checks whether the remainder after dividing a number by 2 is zero."
+    }
+  },
+  {
+    "id": 2,
+    "title": "Applying the Same Principle",
+    "goal": "Complete the condition so that only odd numbers are added to result.",
+    "code": "numbers = [3, 6, 7, 10, 13, 18]\nresult = []\n\nfor n in numbers:\n    if ______:\n        result.append(n)\n\nprint(result)",
+    "answer_kind": "expression",
+    "accepted_answers": ["n % 2 != 0", "n % 2 == 1"],
+    "support_cap": 4,
+    "support_messages": {
+      "1": "What can you say about the remainder when an odd number is divided by 2?",
+      "2": "Use the % operator. An odd number leaves a remainder other than zero when divided by 2.",
+      "3": "First find n % 2, then check that this remainder is not zero.",
+      "4": "The condition is n % 2 != 0. It selects numbers with a non-zero remainder after division by 2."
+    }
+  },
+  {
+    "id": 3,
+    "title": "Independent Check",
+    "goal": "What value will the program print?",
+    "code": "numbers = [4, 7, 12, 15, 20, 23]\ncount = 0\n\nfor n in numbers:\n    if n % 2 == 0:\n        count += 1\n\nprint(count)",
+    "answer_kind": "integer",
+    "accepted_answers": ["3"],
+    "support_cap": 4,
+    "support_messages": {
+      "1": "Check each number in the list in turn: how many of them leave a remainder of zero when divided by 2?",
+      "2": "Start with count = 0 and inspect the list one number at a time. Each time the condition is true, the counter increases by 1.",
+      "3": "Write down the matching numbers separately: the condition checks for a remainder of zero after division by 2. Count them, remembering that count starts at zero.",
+      "4": "The matching numbers are 4, 12, and 20. There are three of them, so count becomes 3 and the program prints 3."
+    }
+  }
+]

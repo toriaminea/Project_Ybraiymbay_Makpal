@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.streamlit/secrets.toml
+results/experiment_log.csv
+results/scenario_results.csv
